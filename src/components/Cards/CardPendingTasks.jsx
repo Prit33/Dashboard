@@ -1,7 +1,5 @@
 import React from "react";
 
-// components
-
 export default function CardSocialTraffic() {
   return (
     <>
@@ -24,6 +22,8 @@ export default function CardSocialTraffic() {
 
         {/* Companies */}
         <div className="flex flex-col bg-slate-700 ml-4 mr-4 rounded-md h-full">
+          
+
           <div className="flex p-4 m-2 -mt-2">
             <div className="flex-shrink-0 mr-4">
               <img
@@ -37,7 +37,7 @@ export default function CardSocialTraffic() {
               <h5 className="text-xs font-bold text-gray-200">Infosys</h5>
               {/* Task details */}
               <div className="text-xs text-gray-200 flex flex-row">
-                <div className="mr-4">
+                <div className="mr-6">
                   <i class="fa-regular fa-clock"></i> 1 day
                 </div>
                 <div className="mr-6">
