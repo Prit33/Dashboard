@@ -1,5 +1,6 @@
 /*eslint-disable*/
-import React from "react";
+import { useState } from "react";
+
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Fieldtechy-logo-Final.svg";
 import { FiLogOut } from "react-icons/fi";
@@ -10,33 +11,30 @@ import {
   FaBorderAll,
   FaClipboardList,
   FaWallet,
-  FaSignOutAlt,
 } from "react-icons/fa";
 
-// import NotificationDropdown from "components/Dropdowns/NotificationDropdown.js";
-// import UserDropdown from "components/Dropdowns/UserDropdown.js";
-
 export default function Sidebar() {
-  const [collapseShow, setCollapseShow] = React.useState("hidden");
+  const [collapseShow, setCollapseShow] = useState("hidden");
   return (
     <>
-      <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-lg bg-emerald-800 text-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
+      <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-lg bg-emerald-800  text-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
+          
           {/* Toggler */}
           <button
-            className="cursor-pointer text-white opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
+            className="cursor-pointer text-slate-300 md:hidden px-3 py-1 text-xl leading-none rounded "
             type="button"
-            onClick={() => setCollapseShow("bg-white p-1   py-3 px-6")}
+            onClick={() => setCollapseShow("bg-emerald-800 p-1 py-3 px-6 ")}
           >
             <i className="fas fa-bars"></i>
           </button>
           {/* Brand */}
 
           <Link
-            className="md:block text-left md:pb-2  mr-0  whitespace-nowrap text-sm   p-4 px-0"
+            className="md:block text-left md:pb-2 mr-0 whitespace-nowrap text-sm p-4 px-0"
             to="/#home"
           >
-            {/* for mobile */}
+            {/* for mobile scree*/}
             <div className="md:hidden">
               <img className="w-10" src={Logo} alt="Fieldtechy"></img>
             </div>
@@ -58,7 +56,7 @@ export default function Sidebar() {
             }
           >
             {/* Collapse header */}
-            <div className="md:min-w-full md:hidden block pb-4 mb-4 border-solid border-blueGray-200">
+            <div className="md:min-w-full md:hidden block pb-4 mb-4 border-solid  ">
               <div className="flex flex-wrap">
                 <div className="w-6/12">
                   <Link
@@ -81,23 +79,8 @@ export default function Sidebar() {
                 </div>
               </div>
             </div>
-            {/* Form */}
-            <div className="mt-6 mb-4 md:hidden">
-              <div className="mb-3 pt-0">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="border-0 px-3 py-2 h-12 border-solid border-blueGray-500 placeholder-blueGray-300 text-black bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
-                />
-              </div>
-            </div>
-
-            {/* Divider */}
             {/* <hr className="my-4 md:min-w-full" /> */}
-            {/* Heading */}
-
-            {/* Navigation */}
-
+            
             <ul className="md:flex-col md:min-w-full flex flex-col list-none m-4 p-1">
               <li className="items-center p-1 hover:font-semibold ">
                 <Link className="flex items-center text-base py-3" to="/#hire">
@@ -106,7 +89,10 @@ export default function Sidebar() {
               </li>
 
               <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link className="flex items-center text-base py-3" to="/#engineers">
+                <Link
+                  className="flex items-center text-base py-3 "
+                  to="/#engineers"
+                >
                   <FaUser size={16} className="mr-2" />
                   Engineers
                 </Link>
@@ -120,13 +106,19 @@ export default function Sidebar() {
               </li>
 
               <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link className="flex items-center text-base py-3" to="/#projects">
+                <Link
+                  className="flex items-center text-base py-3"
+                  to="/#projects"
+                >
                   <FaBorderAll size={16} className="mr-2" /> Projects
                 </Link>
               </li>
 
               <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link className="flex items-center text-base py-3" to="/#report">
+                <Link
+                  className="flex items-center text-base py-3"
+                  to="/#report"
+                >
                   <FaClipboardList size={16} className="mr-2" /> Report
                 </Link>
               </li>
@@ -138,15 +130,14 @@ export default function Sidebar() {
               </li>
             </ul>
 
-            {/* Divider */}
             {/* <hr className=" md:min-w-full text-white" /> */}
-            {/* Heading */}
-
-            {/* Navigation */}
-
+            
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-1">
               <li className="items-center p-6">
-                <Link className="flex font-thin hover:font-semibold " to="/#signout">
+                <Link
+                  className="flex font-thin hover:font-semibold "
+                  to="/#signout"
+                >
                   <FiLogOut size={20} className="mr-2 mt-1" />
                   Sign out
                 </Link>
