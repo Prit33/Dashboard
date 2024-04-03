@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className="hidden lg:inline-block text-white text-lg">Home</div>
           <div className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
             <div className="relative flex w-full flex-wrap items-stretch">
-              <select className="w-48 h-10 p-1 bg-gray-100 border-none cursor-pointer rounded-md text-slate-800 outline-none">
+              <select className="w-48 h-10 p-1 bg-gray-100 border-none cursor-pointer rounded-md text-slate-800 outline-none ">
                 <option
                   value="Select Customer"
                   selected
@@ -50,7 +50,7 @@ export default function Navbar() {
                 className="mr-4 ml-4 cursor-pointer "
               />
               {/*  Notification Panel */}
-              {showNotification && <NotificationPanel />}
+              {showNotification && <NotificationPanel showNotification={showNotification}/>}
             </div>
             <div>
               <div className="relative mr-4 ml-4">

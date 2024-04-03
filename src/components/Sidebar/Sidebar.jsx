@@ -82,42 +82,42 @@ export default function Sidebar() {
               <li className="items-center p-1  ">
                 <Link className="flex items-center py-3" to="/#hire">
                   <FaUserFriends size={19} className="mr-2 " /> 
-                  <div className="absolute ml-10 hover:text-xl">I want to hire</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">I want to hire</div>
                 </Link>
               </li>
 
               <li className="items-center p-1 font-thin ">
                 <Link className="flex items-center py-3 " to="/#engineers">
                   <FaUser size={20} className="mr-2" />
-                  <div className="absolute ml-10 hover:text-xl">Engineers</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">Engineers</div>
                 </Link>
               </li>
 
               <li className="items-center p-1 font-thin  ">
                 <Link className="flex items-center py-3" to="/#jobs">
                   <FaBriefcase size={20} className="mr-2" />
-                  <div className="absolute ml-10 hover:text-xl">Job</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">Job</div>
                 </Link>
               </li>
 
               <li className="items-center p-1 font-thin ">
                 <Link className="flex items-center py-3" to="/#projects">
                   <FaBorderAll size={20} className="mr-2" /> 
-                  <div className="absolute ml-10 hover:text-xl">Projects</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">Projects</div>
                 </Link>
               </li>
 
               <li className="items-center p-1 font-thin   ">
                 <Link className="flex items-center py-3" to="/#report">
                   <FaClipboardList size={20} className="mr-2" /> 
-                  <div className="absolute ml-10 hover:text-xl">Report</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">Report</div>
                 </Link>
               </li>
 
               <li className="items-center p-1 font-thin ">
                 <Link className="flex items-center py-3" to="/#funds">
                   <FaWallet size={20} className="mr-2" /> 
-                  <div className="absolute ml-10 hover:text-xl">Funds</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">Funds</div>
                 </Link>
               </li>
             </ul>
@@ -128,7 +128,7 @@ export default function Sidebar() {
               <li className="items-center p-6">
                 <Link className="flex font-thin  " to="/#signout">
                   <FiLogOut size={22} className="mr-2 mt-1" />
-                  <div className="absolute ml-10 hover:text-xl">Sign out</div>
+                  <div className="absolute ml-10 hover:text-xl transition-all duration-200">Sign out</div>
                 </Link>
               </li>
             </ul>
