@@ -1,11 +1,10 @@
 import React from "react";
 
-// components
-
-export default function CardPageVisits() {
+export default function CardJobsTable() {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 -mt-8 shadow-lg rounded-md">
+        {/* Prioritize Table Title  */}
         <div className="px-4 py-3 border-0">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full px-4 max-w-full flex-grow flex-1">
@@ -24,10 +23,11 @@ export default function CardPageVisits() {
           </div>
         </div>
         
-          {/* Projects table */}
+          {/* table  */}
           <table className="items-center w-full">
+            {/* header */}
             <thead>
-              <tr className="bg-[#cdddd9] text-slate-800 ">
+              <tr className="bg-[#cdddd9] text-slate-900 ">
                 <th className="p-4 align-middle border border-solid border-gray-400 py-3 text-xs  whitespace-nowrap font-semibold text-left">
                   Customer Name
                 </th>
@@ -60,8 +60,9 @@ export default function CardPageVisits() {
                 </th>
               </tr>
             </thead>
-{/*  */}
             <tbody>
+              {/* Contetn */}
+
               <tr className="bg-white text-slate-700 " >
                 <td className="p-4 align-middle border border-solid border-gray-400  text-xs whitespace-nowrap text-left">
                   HCL Technologies

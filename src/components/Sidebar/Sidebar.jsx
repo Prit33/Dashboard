@@ -1,6 +1,4 @@
-/*eslint-disable*/
 import { useState } from "react";
-
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Fieldtechy-logo-Final.svg";
 import { FiLogOut } from "react-icons/fi";
@@ -19,7 +17,6 @@ export default function Sidebar() {
     <>
       <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-lg bg-emerald-800  text-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
-          
           {/* Toggler */}
           <button
             className="cursor-pointer text-slate-300 md:hidden px-3 py-1 text-xl leading-none rounded "
@@ -28,18 +25,18 @@ export default function Sidebar() {
           >
             <i className="fas fa-bars"></i>
           </button>
-          {/* Brand */}
+          {/* Company Logo */}
 
           <Link
             className="md:block text-left md:pb-2 mr-0 whitespace-nowrap text-sm p-4 px-0"
             to="/#home"
           >
-            {/* for mobile scree*/}
+            {/* for mobile screen*/}
             <div className="md:hidden">
               <img className="w-10" src={Logo} alt="Fieldtechy"></img>
             </div>
             <div className="hidden md:block">
-              {/* Render the larger logo only on non-mobile screens */}
+              {/* larger logo only on non-mobile screens */}
               <img
                 className="w-20 m-auto mb-8 py-6"
                 src={Logo}
@@ -80,66 +77,58 @@ export default function Sidebar() {
               </div>
             </div>
             {/* <hr className="my-4 md:min-w-full" /> */}
-            
+
             <ul className="md:flex-col md:min-w-full flex flex-col list-none m-4 p-1">
-              <li className="items-center p-1 hover:font-semibold ">
-                <Link className="flex items-center text-base py-3" to="/#hire">
-                  <FaUserFriends size={19} className="mr-2 " /> I want to hire
+              <li className="items-center p-1  ">
+                <Link className="flex items-center py-3" to="/#hire">
+                  <FaUserFriends size={19} className="mr-2 " /> 
+                  <div className="absolute ml-10 hover:text-xl">I want to hire</div>
                 </Link>
               </li>
 
-              <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link
-                  className="flex items-center text-base py-3 "
-                  to="/#engineers"
-                >
-                  <FaUser size={16} className="mr-2" />
-                  Engineers
+              <li className="items-center p-1 font-thin ">
+                <Link className="flex items-center py-3 " to="/#engineers">
+                  <FaUser size={20} className="mr-2" />
+                  <div className="absolute ml-10 hover:text-xl">Engineers</div>
                 </Link>
               </li>
 
-              <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link className="flex items-center text-base py-3" to="/#jobs">
-                  <FaBriefcase size={16} className="mr-2" />
-                  Job
+              <li className="items-center p-1 font-thin  ">
+                <Link className="flex items-center py-3" to="/#jobs">
+                  <FaBriefcase size={20} className="mr-2" />
+                  <div className="absolute ml-10 hover:text-xl">Job</div>
                 </Link>
               </li>
 
-              <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link
-                  className="flex items-center text-base py-3"
-                  to="/#projects"
-                >
-                  <FaBorderAll size={16} className="mr-2" /> Projects
+              <li className="items-center p-1 font-thin ">
+                <Link className="flex items-center py-3" to="/#projects">
+                  <FaBorderAll size={20} className="mr-2" /> 
+                  <div className="absolute ml-10 hover:text-xl">Projects</div>
                 </Link>
               </li>
 
-              <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link
-                  className="flex items-center text-base py-3"
-                  to="/#report"
-                >
-                  <FaClipboardList size={16} className="mr-2" /> Report
+              <li className="items-center p-1 font-thin   ">
+                <Link className="flex items-center py-3" to="/#report">
+                  <FaClipboardList size={20} className="mr-2" /> 
+                  <div className="absolute ml-10 hover:text-xl">Report</div>
                 </Link>
               </li>
 
-              <li className="items-center p-1 font-thin hover:font-semibold">
-                <Link className="flex items-center text-base py-3" to="/#funds">
-                  <FaWallet size={16} className="mr-2" /> Funds
+              <li className="items-center p-1 font-thin ">
+                <Link className="flex items-center py-3" to="/#funds">
+                  <FaWallet size={20} className="mr-2" /> 
+                  <div className="absolute ml-10 hover:text-xl">Funds</div>
                 </Link>
               </li>
             </ul>
 
-            {/* <hr className=" md:min-w-full text-white" /> */}
-            
+            <hr className=" md:min-w-full text-white" />
+
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-1">
               <li className="items-center p-6">
-                <Link
-                  className="flex font-thin hover:font-semibold "
-                  to="/#signout"
-                >
-                  <FiLogOut size={20} className="mr-2 mt-1" />
-                  Sign out
+                <Link className="flex font-thin  " to="/#signout">
+                  <FiLogOut size={22} className="mr-2 mt-1" />
+                  <div className="absolute ml-10 hover:text-xl">Sign out</div>
                 </Link>
               </li>
             </ul>

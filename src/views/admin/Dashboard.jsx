@@ -1,7 +1,7 @@
 import React from "react";
 import CardLineChart from "../../components/Cards/CardLineChart";
 import CardBarChart from "../../components/Cards/CardBarChart";
-import CardPageTable from "../../components/Cards/CardPageTable";
+import CardPageTable from "../../components/Cards/CardJobsTable";
 import CardPendingTasks from "../../components/Cards/CardPendingTasks";
 export default function Dashboard() {
   return (

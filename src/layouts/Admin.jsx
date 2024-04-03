@@ -1,12 +1,8 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-
-// components
-
-import AdminNavbar from "../components/Navbars/AdminNavbar";
+import AdminNavbar from "../components/Navbars/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import HeaderComponents from "../components/Headers/HeaderComponents";
-import FooterAdmin from "../components/Footers/Footer";
+import Footer from "../components/Footers/Footer";
 // views
 import Dashboard from "../views/admin/Dashboard";
 
@@ -16,12 +12,11 @@ export default function Admin() {
       <Sidebar />
       <div className="relative md:ml-64 bg-[#EEEEEE]">
         <AdminNavbar />
-
         <HeaderComponents />
-        {/* <hr className="border-t-2 border-slate-300 my-6" /> */}
+        <hr className="border-t-1 border-slate-300 my-6 -mb-4" />
         <Dashboard />
         {/* Header */}
-        <FooterAdmin/>
+        <Footer/>
         
       </div>
     </>

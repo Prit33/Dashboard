@@ -1,8 +1,8 @@
-import React from "react";
+import { useEffect } from "react";
 import Chart from "chart.js";
 
 export default function CardLineChart() {
-  React.useEffect(() => {
+  useEffect(() => {
     var config = {
       type: "line",
       data: {
@@ -30,7 +30,6 @@ export default function CardLineChart() {
             fill: false,
           },
           {
-            //10b981
             label: "Previous Year",
             fill: false,
             backgroundColor: "#518f7e",
@@ -71,11 +70,11 @@ export default function CardLineChart() {
             {
               ticks: {
                 fontColor: "gray",
-                fontSize: 12, 
+                fontSize: 12,
               },
               display: true,
               scaleLabel: {
-                display: false, 
+                display: false,
               },
               gridLines: {
                 display: true,
@@ -117,18 +116,18 @@ export default function CardLineChart() {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words h-auto mb-6 shadow-lg rounded-lg bg-white ">
+        {/* Chart title */}
         <div className="h-12 px-4 py-2 ">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1 m-2 ">
               <h2 className="text-slate-800 text-xl font-semibold ">
                 Projects
-              </h2>{" "}
-              {/* Remove padding/margin from title */}
+              </h2>
             </div>
           </div>
         </div>
         <div className="p-4 flex-auto bg-[#EEEE] m-2 rounded-lg">
-          {/* Chart */}
+          {/* Chart canvas*/}
           <div className="relative h-350-px p-2 -mt-4 -mb-6 ">
             <canvas id="line-chart" width={98} height={47}></canvas>
           </div>

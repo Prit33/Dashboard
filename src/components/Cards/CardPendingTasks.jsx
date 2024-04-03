@@ -4,6 +4,7 @@ export default function CardSocialTraffic() {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white shadow-lg rounded-lg">
+        {/* Table title */}
         <div className="rounded-t mb-0 px-4 py-3 border-0">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full px-4 max-w-full flex-grow flex-1">
@@ -51,7 +52,6 @@ export default function CardSocialTraffic() {
               </div>
             </div>
           </div>
-          {/* Add more pending tasks in a similar structure */}
           <hr className="border-t-2 border-[#ffffff] py-1" />
 
           <div className="flex items-center border-gray-200 bg-gray-00 p-4 m-2 -mt-2">

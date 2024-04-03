@@ -1,13 +1,7 @@
 import React from "react";
-export default function CardStats({
-  title,
-  value,
-  iconName,
-  iconColor,
-  cardColor,
-}) {
+export default function CardHeader({ title, value, iconName, cardColor }) {
   return (
-    // Header stats
+    // Header Cards
     <>
       <div
         className={

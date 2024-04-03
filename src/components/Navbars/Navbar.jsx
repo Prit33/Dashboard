@@ -1,8 +1,6 @@
-import React from "react";
 import { useState } from "react";
 import { InlineIcon } from "@iconify/react";
 import NotificationPanel from "./NotificationPanel";
-// import UserDropdown from "components/Dropdowns/UserDropdown.js";
 
 export default function Navbar() {
   const [showNotification, setShowNotification] = useState(false);
@@ -16,9 +14,7 @@ export default function Navbar() {
       {/* Navbar */}
       <nav className="absolute top-0 left-0 w-full z-10 md:flex-row md:flex-nowrap md:justify-start flex items-center p-4 bg-gray-800 shadow-lg">
         <div className="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
-          {/* Brand */}
           <div className="hidden lg:inline-block text-white text-lg">Home</div>
-          {/* Form */}
           <div className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
             <div className="relative flex w-full flex-wrap items-stretch">
               <select className="w-48 h-10 p-1 bg-gray-100 border-none cursor-pointer rounded-md text-slate-800 outline-none">
@@ -52,10 +48,9 @@ export default function Navbar() {
                 icon="clarity:notification-outline-badged"
                 style={{ color: "#059669", fontSize: "24px" }}
                 className="mr-4 ml-4 cursor-pointer "
-                />
-                {/*  Notification Panel */}
+              />
+              {/*  Notification Panel */}
               {showNotification && <NotificationPanel />}
-              
             </div>
             <div>
               <div className="relative mr-4 ml-4">
@@ -64,6 +59,7 @@ export default function Navbar() {
                   style={{ color: "#059669", fontSize: "24px" }}
                   className=" absolute cursor-pointer"
                 />
+                {/* wallet amount */}
                 <span
                   className="opacity-0 hover:opacity-100 hover:translate-y-5 py-1
               inset-0 z-10 flex justify-center items-center text-xs text-slate-100 font-semibold cursor-pointer ase-in duration-300"
@@ -73,15 +69,13 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          {/* User */}
 
+          {/* User */}
           <div>
             <img
               className="w-10 rounded-full align-middle border-none shadow-lg ml-2 cursor-pointer "
               src="https://edug.in/panel/head_admin/School/school_head/first_photo/DEMO59167.jpg"
             />
-
-            {/* <p className="text-xs m-2 ">Teceze</p>{" "} */}
           </div>
         </div>
       </nav>
