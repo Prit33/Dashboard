@@ -6,26 +6,25 @@ import CardPendingTasks from "../../components/Cards/CardPendingTasks";
 export default function Dashboard() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 justify-center items-baseline overflow-hidden mt-4">
+      
+      <div className="grid grid-cols-2 justify-center items-baseline overflow-hidden mt-6 ">
         {/* Left side */}
         <div className="col-span-2 lg:col-span-1 ">
-          <div className="m-6 ml-24 w-full">
-          <CardPendingTasks />
+          <div className="m-4 ml-12 w-10/12">
+            <CardPendingTasks />
           </div>
         </div>
-        <div className="w-10/12">
+        <div className="w-full p-4 -mx-10">
           <CardBarChart />
-          <CardLineChart />
+            <CardLineChart />
         </div>
       </div>
-        {/* Right side */}
-        <div>
+      {/* Right side */}
+      <div>
         <div className="m-4 mb-4 xl:mb-0 px-4 rounded-lg">
           <CardPageTable />
         </div>
-
-        
-        </div>
+      </div>
     </>
   );
 }

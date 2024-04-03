@@ -23,18 +23,21 @@ export default function CardLineChart() {
         datasets: [
           {
             label: "Current Year",
-            backgroundColor: "#10b981",
-            borderColor: "#10b981",
+            backgroundColor: "#1e6752",
+            borderColor: "#1e6752",
+            borderWidth: 2,
             data: [80, 220, 490, 420, 320, 200, 270, 500, 750, 940, 480, 890],
             fill: false,
           },
           {
+            //10b981
             label: "Previous Year",
             fill: false,
-            backgroundColor: "#047857",
-            borderColor: "#047857",
+            backgroundColor: "#518f7e",
+            borderColor: "#518f7e",
+            borderWidth: 2,
             data: [750, 500, 450, 150, 100, 130, 500, 750, 900, 500, 400, 600],
-            borderDash: [5, 5],
+            borderDash: [8, 8],
           },
         ],
       },
@@ -49,7 +52,7 @@ export default function CardLineChart() {
         legend: {
           display: true,
           labels: {
-            fontColor: "white",
+            fontColor: "gray",
           },
           align: "end",
           position: "bottom",
@@ -67,18 +70,18 @@ export default function CardLineChart() {
           xAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,0.9)",
-                fontSize: 10, 
+                fontColor: "gray",
+                fontSize: 12, 
               },
               display: true,
               scaleLabel: {
                 display: false, 
               },
               gridLines: {
-                display: false,
+                display: true,
                 borderDash: [4],
                 borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.3)",
+                color: "rgba(33, 37, 41, 0.1)",
                 zeroLineColor: "rgba(0, 0, 0, 0)",
               },
             },
@@ -86,26 +89,22 @@ export default function CardLineChart() {
           yAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,.7)",
+                fontColor: "gray",
                 fontSize: 10,
                 min: 0,
                 max: 1000,
-                stepSize: 500,
+                stepSize: 200,
               },
               display: true,
               scaleLabel: {
                 display: false,
                 labelString: "Value",
-                fontColor: "white",
               },
               gridLines: {
                 borderDash: [0],
-                borderDashOffset: [0],
                 drawBorder: false,
-                color: "rgba(255, 255, 255, 0.20)",
-                zeroLineColor: "rgba(255, 255, 255, 0.20)",
-                zeroLineBorderDash: [1],
-                zeroLineBorderDashOffset: [1],
+                color: "#ced1d7",
+                zeroLineColor: "rgba(255, 255, 255, 0.10)",
               },
             },
           ],
@@ -117,21 +116,21 @@ export default function CardLineChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words w-10/12 h-auto mb-6 shadow-lg rounded-lg bg-slate-800 ">
-        <div className="rounded-t h-12 px-4 py-2 ">
+      <div className="relative flex flex-col min-w-0 break-words h-auto mb-6 shadow-lg rounded-lg bg-white ">
+        <div className="h-12 px-4 py-2 ">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1 m-2 ">
-              <h2 className="text-white text-xl font-semibold mb-0">
+              <h2 className="text-slate-800 text-xl font-semibold ">
                 Projects
               </h2>{" "}
               {/* Remove padding/margin from title */}
             </div>
           </div>
         </div>
-        <div className="p-4 flex-auto ">
+        <div className="p-4 flex-auto bg-[#EEEE] m-2 rounded-lg">
           {/* Chart */}
-          <div className="relative h-350-px p-2 -mt-4 -mb-6">
-            <canvas id="line-chart"></canvas>
+          <div className="relative h-350-px p-2 -mt-4 -mb-6 ">
+            <canvas id="line-chart" width={98} height={47}></canvas>
           </div>
         </div>
       </div>

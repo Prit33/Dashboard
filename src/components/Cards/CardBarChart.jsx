@@ -9,13 +9,13 @@ export default function CardBarChart() {
         labels: ["2020", "2021", "2022", "2023"],
         datasets: [
           {
-            backgroundColor: "#059669",
+            backgroundColor: "#05563f",
             //#047857
-            borderColor: "#6ee7b7",
+            // borderColor: "#047857",
             data: [80, 95, 74, 82],
             fill: false,
             barThickness: 32,
-            borderWidth: 2,
+            // borderWidth: 2,
             borderSkipped: 'bottom'
           },
         ],
@@ -42,13 +42,13 @@ export default function CardBarChart() {
           xAxes: [
             {
               ticks:{
-                fontColor: "white",
+                fontColor: "gray",
               },
               display: true,
               scaleLabel: {
                 display: false,
                 labelString: "Year",
-                fontColor: "white",
+                fontColor: "gray",
               },
               gridLines: {
                 display: false,
@@ -58,7 +58,7 @@ export default function CardBarChart() {
           yAxes: [
             {
               ticks: {
-                fontColor: "white", // Change y-axis scale label color to white
+                fontColor: "gray", // Change y-axis scale label color to white
                 min: 1,
                 max: 100,
                 stepSize: 49,
@@ -73,7 +73,7 @@ export default function CardBarChart() {
                 labelString: "Value",
               },
               gridLines: {
-                color: "#334155", // Change grid color to white
+                color: "#ced1d7", // Change grid color to white
               },
             },
           ],
@@ -85,18 +85,18 @@ export default function CardBarChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words bg-slate-800 w-10/12 mb-4 shadow-lg rounded-md">
+      <div className="relative flex flex-col min-w-0 break-words bg-white  mb-4 shadow-lg rounded-md">
         <div className="rounded-t mb-0 px-4 py-3 h-10 ">
           <div className="flex flex-wrap items-center">
-            <div className="relative w-full max-w-full flex-grow flex-1 ">
-              <h2 className="text-white text-xl font-semibold">Revenue</h2>
+            <div className="relative w-full max-w-full flex-grow flex-1 ml-2">
+              <h2 className="text-slate-700 text-xl font-semibold">Revenue</h2>
             </div>
           </div>
         </div>
-        <div className="p-4 flex-auto bg-slate-800 rounded-md">
+        <div className="m-2 p-2 rounded-md flex-auto bg-[#EEEE]">
           {/* Chart */}
-          <div className="relative h-350-px ">
-            <canvas id="bar-chart"></canvas>
+          <div className="relative h-350-px p-2 ">
+            <canvas id="bar-chart" ></canvas>
           </div>
         </div>
       </div>

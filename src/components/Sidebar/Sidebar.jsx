@@ -60,7 +60,7 @@ export default function Sidebar() {
               <div className="flex flex-wrap">
                 <div className="w-6/12">
                   <Link
-                    className="md:block text-left md:pb-2 text-blueGray-600 mr-0 whitespace-nowrap p-4 px-0"
+                    className="md:block text-left md:pb-2 mr-0 whitespace-nowrap p-4 px-0"
                     to="/"
                   >
                     <div className="w-14 h-5">

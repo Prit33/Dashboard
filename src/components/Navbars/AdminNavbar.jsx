@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { InlineIcon } from "@iconify/react";
-import { Link } from "react-router-dom";
 import NotificationPanel from "./NotificationPanel";
 // import UserDropdown from "components/Dropdowns/UserDropdown.js";
 
@@ -15,19 +14,19 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full z-10 md:flex-row md:flex-nowrap md:justify-start flex items-center p-4 bg-slate-800 shadow-lg">
+      <nav className="absolute top-0 left-0 w-full z-10 md:flex-row md:flex-nowrap md:justify-start flex items-center p-4 bg-gray-800 shadow-lg">
         <div className="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
           {/* Brand */}
           <div className="hidden lg:inline-block text-white text-lg">Home</div>
           {/* Form */}
           <div className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
             <div className="relative flex w-full flex-wrap items-stretch">
-              <select className="w-48 h-10 p-1 bg-slate-500 border-none cursor-pointer rounded-md text-slate-200 outline-none">
+              <select className="w-48 h-10 p-1 bg-gray-100 border-none cursor-pointer rounded-md text-slate-800 outline-none">
                 <option
                   value="Select Customer"
                   selected
                   disabled
-                  style={{ color: "white" }}
+                  style={{ color: "black" }}
                 >
                   Select Customer
                 </option>
@@ -43,7 +42,7 @@ export default function Navbar() {
             <div>
               <InlineIcon
                 icon="mynaui:message-dots"
-                style={{ color: "#10b981", fontSize: "26px" }}
+                style={{ color: "#059669", fontSize: "26px" }}
                 className="mr-4 ml-4 cursor-pointer"
               />
             </div>
@@ -51,7 +50,7 @@ export default function Navbar() {
             <div onClick={toggleNotification}>
               <InlineIcon
                 icon="clarity:notification-outline-badged"
-                style={{ color: "#10b981", fontSize: "24px" }}
+                style={{ color: "#059669", fontSize: "24px" }}
                 className="mr-4 ml-4 cursor-pointer "
                 />
                 {/*  Notification Panel */}
@@ -62,7 +61,7 @@ export default function Navbar() {
               <div className="relative mr-4 ml-4">
                 <InlineIcon
                   icon="clarity:wallet-line"
-                  style={{ color: "#10b981", fontSize: "24px" }}
+                  style={{ color: "#059669", fontSize: "24px" }}
                   className=" absolute cursor-pointer"
                 />
                 <span
