@@ -54,7 +54,7 @@ function NotificationPanel() {
                   />
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm font-semibold">
+                  <p className="text-sm font-secMedium">
                     {notification.message}
                   </p>
                   <p className="text-xs font-extralight text-gray-400">

@@ -19,7 +19,7 @@ export default function CardHeader({ title, value, iconName, cardColor }) {
             <div className="text-center mt-2">
               <h5 className="text-sm ">{title}</h5>
               <div className="mt-1">
-                <span className="font-bold text-2xl  ">{value}</span>
+                <span className="font-secBold text-2xl  ">{value}</span>
               </div>
             </div>
           </div>

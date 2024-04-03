@@ -4,7 +4,6 @@ import Logo from "../../assets/Fieldtechy-logo-Final.svg";
 import { FiLogOut } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
 import {
-  FaUserFriends,
   FaBriefcase,
   FaBorderAll,
   FaClipboardList,
@@ -38,7 +37,7 @@ export default function Sidebar() {
             <div className="hidden md:block">
               {/* larger logo only on non-mobile screens */}
               <img
-                className="w-20 m-auto mb-8 py-6"
+                className="w-24 m-auto mb-8 py-6"
                 src={Logo}
                 alt="Fieldtechy"
               />
@@ -79,9 +78,9 @@ export default function Sidebar() {
             {/* <hr className="my-4 md:min-w-full" /> */}
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none m-4 p-1">
-              <li className="items-center p-1  ">
-                <Link className="flex items-center py-3" to="/#hire">
-                  <FaUserFriends size={19} className="mr-2 " /> 
+            <li className="items-center p-1 font-thin ">
+                <Link className="flex items-center py-3 " to="/#hire">
+                  <FaUser size={20} className="mr-2" />
                   <div className="absolute ml-10 hover:text-xl transition-all duration-200">I want to hire</div>
                 </Link>
               </li>

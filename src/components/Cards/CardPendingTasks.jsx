@@ -8,11 +8,11 @@ export default function CardSocialTraffic() {
         <div className="rounded-t mb-0 px-4 py-3 border-0">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full px-4 max-w-full flex-grow flex-1">
-              <h3 className="font-semibold  text-slate-800">Tasks Pending</h3>
+              <h3 className="font-semibold text-lg text-slate-800">Tasks Pending</h3>
             </div>
-            <div className="relative w-full px-9 max-w-full flex-grow flex-1 text-right">
+            <div className="relative w-full px-7 max-w-full flex-grow flex-1 text-right">
               <button
-                className="bg-[#387f6b] text-white text-xs font-semibold  mt-3 px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="bg-[#387f6b] text-white text-xs font-semibold  mt-3 px-2 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
                 type="button"
               >
                 View all
@@ -35,7 +35,7 @@ export default function CardSocialTraffic() {
 
             {/* Company name */}
             <div className="flex-1 ">
-              <h5 className="text-xs font-bold text-gray-600">Infosys</h5>
+              <h5 className="text-xs font-secBold  text-gray-600">Infosys</h5>
               {/* Task details */}
               <div className="text-xs text-gray-600 flex flex-row">
                 <div className="mr-6">
